@@ -3,8 +3,8 @@
 	import Navbar from '$lib/navbar/Navbar.svelte';
 	import '../app.css';
 	let info = {
-		tagline: "Welcome to my custom dApp built with SvelteKit and targetting Ethereum Native networks",
-		title: "dApp",
+		tagline: "Welcome to my personal portfolio, powered by ENS",
+		title: "pzzld.eth",
 		pages: [
 			{ endpoint: "/", label: "Home"},
 			{ endpoint: "/about", label: "About"},
