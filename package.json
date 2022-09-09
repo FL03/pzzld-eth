@@ -3,25 +3,36 @@
     "bugs": {
         "url": "https://github.com/FL03/pzzld-eth/issues"
     },
+    "dependencies": {
+        "@fontsource/fira-mono": "^4.5.0",
+        "cookie": "^0.4.1",
+        "svelte-web3": "latest"
+    },
     "description": "Project reserved for my ens name",
-    "homepage": "https://github.com/FL03/pzzld-eth#readme",
+    "devDependencies": {
+        "@sveltejs/adapter-auto": "next",
+        "@sveltejs/kit": "next",
+        "@types/cookie": "^0.5.1",
+        "autoprefixer": "^10.4.8",
+        "postcss": "^8.4.16",
+        "svelte": "^3.46.0",
+        "svelte-check": "^2.7.1",
+        "svelte-preprocess": "^4.10.7",
+        "tailwindcss": "^3.1.8",
+        "typescript": "^4.7.4",
+        "vite": "^3.1.0-beta.1"
+    },
+    "homepage": "https://pzzld.eth.link/",
     "license": "MIT",
     "name": "@project/pzzld",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/FL03/pzzld-eth.git"
-    },
+    "readme": "https://github.com/FL03/pzzld-eth/#README",
+    "repository": "https://github.com/FL03/pzzld-eth",
     "scripts": {
-        "dev": "npm run www:dev",
-        "start": "npm run www:preview",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "www:install": "npm install --workspace=@pzzld/www",
-        "www:build": "npm run build --workspace=@pzzld/www",
-        "www:dev": "npm run dev -- --host --workspace=@pzzld/www",
-        "www:preview": "npm run preview -- --host --workspace=@pzzld/www"
+        "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+        "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+        "build": "vite build",
+        "dev": "vite dev",
+        "preview": "vite preview"
     },
-    "version": "1.0.0",
-    "workspaces": [
-        "www"
-    ]
+    "version": "1.0.0"
 }
