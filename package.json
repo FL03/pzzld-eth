@@ -11,8 +11,8 @@
     "repository": "https://github.com/FL03/pzzld-eth",
     "scripts": {
         "build": "npm run www:build",
-        "dev": "npm run www:dev -- --host",
-        "start": "npm run www:preview -- --host",
+        "dev": "npm run www:dev",
+        "start": "npm run www:preview",
         "www:build": "npm run build --workspace=@pzzld/www",
         "www:dev": "npm run dev --workspace=@pzzld/www",
         "www:install": "npm install --workspace=@pzzld/www",

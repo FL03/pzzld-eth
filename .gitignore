@@ -1,9 +1,16 @@
+# Exceptions
+!**/*.config.cjs
+!**/*.config.js
+
+!**/default.config.*
+**/!*.env.example
+
 # Dirs
 **/__pycache__/
 **/__sapper__/
 
 **/.DS_STORE/
-**/.artifacts/
+**/.artifacts/data/
 **/.docker/data/
 **/.idea/
 **/.svelte-kit/
@@ -24,8 +31,6 @@
 **/config.*
 **/*.config.*
 
-!**/default.config.*
-
 **/*.csv
 **/*.csv.*
 
@@ -37,14 +42,6 @@
 **/*.env
 **/*.env.*
 
-**/!*.env.example
-
-**/*.jpeg
-**/*.jpeg.*
-
-**/*.jpg
-**/*.jpg.*
-
 **/*.lock
 **/*.lock.*
 
@@ -52,12 +49,6 @@
 
 **/*.log
 **/*.log.*
-
-**/*.png
-**/*.png.*
-
-**/*.svg
-**/*.svg.*
 
 **/*.whl
 **/*.whl.*
