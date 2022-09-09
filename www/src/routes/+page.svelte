@@ -1,28 +1,48 @@
 <script>
-	
+	let bio = {
+		header: {
+			heading: "Welcome my Portfolio",
+			subtitle: "I am a full-stack blockchain engineer actively advancing and engaging my company Scattered-Systems, LLC",
+			data: [
+				"akl", "sgf"
+			]
+		}
+	}
+	let frame = {
+		description: "Welcome to pzzld.eth, I am a full-stack blockchain engineer currently advancing the efforts of my company, Scattered-Systems, LLC"
+	}
 </script>
 
 <svelte:head>
-	<title>Template</title>
-	<meta name="description" content="A complete template for creating elegant decentralized applications" />
+	<title>pzzld.eth</title>
+	<meta name="description" content="{frame.description}" />
 </svelte:head>
 
-<span class="flex-1">
+<section class="flex-1">
 	<div class="container mx-auto min-h-full text-black dark:text-white content-center mt-3 py-3">
 		<h1 class="heading text-bold py-1">
-			Welcome to the future of internet-based experiences
+			{bio.header.heading}
 		</h1>
 		<h2 class="subheading text-bold py-1">
-			Enjoy a complete application template for developing user-centric decentralized application's powered by Ethereum and built leveraging SvelteKit
+			{bio.header.subtitle}
 		</h2>
 		<p class="py-1">
-			Template created by pzzld.eth for Scattered-System's, LLC
+			{#each bio.header.data as i}
+				<span class = "flex flex-1" >{i}</span>
+			{/each}
+
 		</p>
 	</div>
-</span>
+</section>
 
 
 <style>
+	section {
+		min-height: 100vh;
+	}
+	.block {
+		display: block
+	}
 	.heading {
 		font-size: xx-large;
 		font-style: normal;
