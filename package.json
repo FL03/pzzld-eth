@@ -1,0 +1,27 @@
+{
+    "author": "FL03 <jo3mccain@icloud.com> (https://gitlab.com/FL03)",
+    "bugs": {
+        "url": "https://github.com/FL03/pzzld-eth/issues"
+    },
+    "description": "Project reserved for my ens name",
+    "homepage": "https://github.com/FL03/pzzld-eth#readme",
+    "license": "MIT",
+    "name": "@project/pzzld",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FL03/pzzld-eth.git"
+    },
+    "scripts": {
+        "dev": "npm run www:dev",
+        "start": "npm run www:preview",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "www:install": "npm install --workspace=@pzzld/www",
+        "www:build": "npm run build --workspace=@pzzld/www",
+        "www:dev": "npm run dev -- --host --workspace=@pzzld/www",
+        "www:preview": "npm run preview -- --host --workspace=@pzzld/www"
+    },
+    "version": "1.0.0",
+    "workspaces": [
+        "www"
+    ]
+}
