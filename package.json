@@ -3,8 +3,7 @@
 	"bugs": "https://gitlab.com/pzzld/pzzld-eth/-/issues",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
-		"cookie": "^0.4.1",
-		"svelte-web3": "latest"
+		"cookie": "^0.4.1"
 	},
 	"description": "Project reserved for my ens name",
 	"devDependencies": {

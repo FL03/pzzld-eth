@@ -7,8 +7,7 @@
 		title: "pzzld.eth",
 		pages: [
 			{ endpoint: "/", label: "Home"},
-			{ endpoint: "/about", label: "About"},
-			{ endpoint: "/dashboard", label: "Dashboard"}
+			{ endpoint: "/about", label: "About"}
 		]
 
     }
