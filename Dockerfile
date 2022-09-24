@@ -1,7 +1,7 @@
-FROM jo3mccain/node as builder-base
+FROM node:latest as builder-base
 
-ADD . ./project
-WORKDIR /project
+ADD . ./app
+WORKDIR /app
 
 COPY . .
 RUN npm install &&\
