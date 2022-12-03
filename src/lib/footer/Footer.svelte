@@ -1,26 +1,29 @@
 <script>
-import { end_hydrating } from "svelte/internal";
-
-
+    import { info } from '$lib/constants.js'
 </script>
 
-<footer class="absolute bottom-0 flex-1 inset-x-0 text-black dark:text-white m-3 py-3">
-    <div class="flex">
-        <span class="w-64 container flex-none mx-auto">
-            <p class="text-md">
-               
-            </p>
-        </span>
-        <span class="flex-1 container mx-auto">
-            <p class="text-md">
-                Created by <a href="https://pzzld.eth.link/">pzzld.eth</a> in part by <a href="https://scattered-systems.com">Scattered-Systems, LLC</a>
-            </p>
-        </span>
-        <span class="w-64 container flex-none mx-auto">
-            <p class="text-md">
-                
-            </p>
-        </span>
-    </div>
-    
+<footer class="bg-zinc-800 bottom-0 flex p-3 w-full z-50">
+	<div class="flex flex-auto items-center justify-between">
+		<div class="flex flex-auto items-center justify-center">
+			<ul class="list-none">
+                <li class="hover:text-underline">
+                    <a href="https://github.com/{info.misc.github}">GitHub</a>
+                </li>
+            </ul>
+		</div>
+		<div class="flex flex-auto items-center justify-center">
+            <ul class="list-none">
+                <li class="hover:text-underline">
+                    <a href="https://scsys.eth.limo">{ info.company.name }</a>
+                </li>
+            </ul>
+        </div>
+		<div class="flex flex-auto flex-wrap items-center justify-center">
+            <ul class="block list-none">
+                <li class="hover:text-underline">
+                    <a href="https://twitter.com/{info.misc.twitter}">Twitter</a>
+                </li>
+            </ul>
+        </div>
+	</div>
 </footer>
