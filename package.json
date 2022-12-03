@@ -1,12 +1,14 @@
 {
-	"author": "FL03 <jo3mccain@icloud.com> (https://gitlab.com/FL03)",
-	"bugs": "https://gitlab.com/pzzld/pzzld-eth/-/issues",
+	"author": "FL03 <jo3mccain@icloud.com> (https://github.com/FL03)",
+	"bugs": "https://github.com/pzzld/pzzld-eth/issues",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
 		"cookie": "^0.4.1"
 	},
 	"description": "Project reserved for my ens name",
 	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"@types/cookie": "^0.5.1",
@@ -20,10 +22,10 @@
 		"vite": "^3.1.0-beta.1"
 	},
 	"homepage": "https://pzzld.eth.limo",
-	"license": "MIT",
+	"license": "Apache-2.0",
 	"name": "@pzzld/www",
-	"readme": "https://gitlab.com/pzzld/pzzld-eth/#README",
-	"repository": "https://gitlab.com/pzzld/pzzld-eth",
+	"readme": "https://github.com/FL03/pzzld-eth/#README",
+	"repository": "https://github.com/FL03/pzzld-eth",
 	"scripts": {
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
