@@ -7,12 +7,9 @@ COPY . .
 RUN npm install &&\
     npm run build
 
-FROM builder-base as development
+FROM builder-base as runner
 
-EXPOSE 5173/tcp
-CMD ["npm", "run", "dev", "--", "--host"]
-
-FROM builder-base as production
+ENV MODE="container"
 
 EXPOSE 3000
 CMD ["npm", "run", "start"]
