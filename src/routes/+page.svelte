@@ -21,10 +21,10 @@
 <section class="flex-1">
 	<div class="container mx-auto min-h-full text-black dark:text-white content-center mt-3 py-3">
 		<h1 class="heading text-bold py-1">
-			{bio.header.heading}
+			Welcome to Puzzled
 		</h1>
 		<h2 class="subheading text-bold py-1">
-			{bio.header.subtitle}
+			I am a full-stack developer specializing in blockchain technologies primarily servicing my initative, Scattered-Systems, DAO LLC.
 		</h2>
 		<p class="py-1">
 			{#each bio.header.data as i}
