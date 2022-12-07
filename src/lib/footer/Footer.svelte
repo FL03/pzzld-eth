@@ -6,7 +6,7 @@
 
 </script>
 
-<footer class="absolute bottom-0 flex min-w-full max-w-screen p-4 bg-transparent rounded-lg shadow items-center justify-between md:p-6">
+<footer class="relative bottom-0 flex min-w-full max-w-screen bg-transparent rounded-lg shadow items-center justify-between md:p-6">
     <span class="sm:text-center prose prose-invert">
         © 2022 <a href="https://scsys.eth.limo" class="hover:italic hover:underline">{company}™</a> All Rights Reserved.
     </span>

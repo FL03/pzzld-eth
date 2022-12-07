@@ -1,5 +1,5 @@
 <script>
-	import Header from '$lib/header';
+	import { Header } from '$lib';
 
 
 	let frame = {
@@ -22,6 +22,9 @@
 	</section>
 </Header>
 
+<div class="flex flex-wrap min-h-full max-h-screen p-3 prose prose-invert">
+
+</div>
 
 <style>
 
